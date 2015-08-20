@@ -117,6 +117,9 @@ include_directories(
     ${FFMPEG_INCLUDE_DIRS}
 )
 
+# zlib
+include_directories( ${ZLIB_INCLUDE_DIRS} )
+
 target_link_libraries(openmw
     ${OSG_LIBRARIES}
     ${OPENTHREADS_LIBRARIES}
@@ -134,6 +137,7 @@ target_link_libraries(openmw
     ${BULLET_LIBRARIES}
     ${MYGUI_LIBRARIES}
     ${SDL2_LIBRARY}
+    ${ZLIB_LIBRARIES}
     "osg-ffmpeg-videoplayer"
     "oics"
     components

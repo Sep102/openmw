@@ -299,6 +299,7 @@ find_package(Boost REQUIRED COMPONENTS ${BOOST_COMPONENTS})
 find_package(SDL2 REQUIRED)
 find_package(OpenAL REQUIRED)
 find_package(Bullet REQUIRED)
+find_package(ZLIB REQUIRED)
 
 include_directories("."
     SYSTEM
